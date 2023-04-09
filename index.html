@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Генератор паролей</title>
+</head>
+<body>
+    <header>
+        <h2>Генератор паролей</h2>
+    </header>
+    <div class="wrapper">
+        <div class="options">
+            <label class="length">
+                Длина пароля:
+                <select name="length" id="length">
+                    <option value="18">18</option>
+                    <option value="36">36</option>
+                </select>
+            </label>
+            <label class="numbers">
+                <input class="numbers__checkbox" type="checkbox">
+                Использовать цифры
+            </label>
+            <label class="symbols">
+                <input class="symbols__checkbox" type="checkbox">
+                Использовать специальные символы
+            </label>
+        </div>
+        <button id="generate">Создать пароль</button>
+    </div>
+    <script src="password-gen.js"></script>
+</body>
+</html>
